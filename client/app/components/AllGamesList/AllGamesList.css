@@ -1,10 +1,10 @@
 .AllGameList {
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
+  
   .games-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -19,6 +19,8 @@
     padding: 10px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     margin-top: 2vh;
+    text-align: center; 
+    margin-bottom: 10vh;
   }
   
   .game-card img {
@@ -29,7 +31,23 @@
   .game-card h2 {
     margin: 10px 0;
   }
-
+  
   .SearchBar {
-    margin-top: 12vh; 
+    margin-top: 10vh; 
+  }
+  
+  .SearchBar input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .vote-button {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
