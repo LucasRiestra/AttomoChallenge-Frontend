@@ -15,6 +15,10 @@
 
 body{
   margin: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2024/02/551_Artboard.jpg?resize=1000%2C750&ssl=1');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed
 }
 
 .container{

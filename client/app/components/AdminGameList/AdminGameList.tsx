@@ -1,4 +1,4 @@
-// AdminGameList.tsx
+
 'use client'
 
 import React, { useEffect, useState } from 'react';
@@ -9,6 +9,7 @@ import { useUser } from '@auth0/nextjs-auth0/client';
 import { getUserByEmail } from '../../services/user.services';
 import { Modal, Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 interface Game {
   id: string;
