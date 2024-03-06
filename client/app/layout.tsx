@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import { UserContextProvider } from '../app/context/userContext'; 
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 

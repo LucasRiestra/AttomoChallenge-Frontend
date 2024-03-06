@@ -8,12 +8,21 @@
     color: #fff;
     padding: 20px;
     margin: 0 auto;
+    font-family: Arial, sans-serif;
   }
   
   .Header h1 {
     margin: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+    color: white;
+    font-size: 4vh;
   }
-  
+
+  .Header a {
+    text-decoration: none !important;
+}
+
   .Header button {
     background-color: #4CAF50; 
     border: none;

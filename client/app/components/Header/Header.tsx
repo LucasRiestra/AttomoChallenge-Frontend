@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header className='Header'>
-      <h1>GameVote</h1>
+      <Link href="http://localhost:3000/"><h1 className='app-title'>GameVote</h1></Link>
       {isLoading ? (
         <div>Loading...</div>
       ) : user && localUser ? (
