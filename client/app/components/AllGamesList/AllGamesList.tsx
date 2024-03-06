@@ -81,6 +81,12 @@ const AllGameList = () => {
     const userName = user.name || '';
     const userId = userData.id || ''; 
   
+    const userVotesCount = games.reduce((count, game) => count + game.votes.filter(vote => vote.user.id === userId).length, 0);
+    if (userVotesCount >= 5) {
+      toast.error('You have reached the maximum number of votes.');
+      return;
+    }
+  
     const userVote = games.find(game => game.id === gameId)?.votes.find(vote => vote.user.id === userId);
   
     if (userVote) {
