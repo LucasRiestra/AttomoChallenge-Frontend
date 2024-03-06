@@ -54,7 +54,8 @@ export default function Header() {
             Login
           </button>
         </Link>
-      )}
+        
+      )}<h1>Admin Space</h1>
     </header>
   );
 }
