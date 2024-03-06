@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { getUserByEmail } from '../../services/user.services';
-import './AdminSpace.css';
+import './FormAdminSpace.css';
 import "../../../styles/globals.css";
 import { toast } from 'react-hot-toast';
 
@@ -51,6 +51,7 @@ const AdminSpace = () => {
       const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/games`, formData);
       console.log(response.data);
       toast.success('Game created successfully!');
+      window.location.reload();
     } catch (error) {
       console.error(error);
       toast.error('An error occurred while creating the game.');

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { UserContextProvider } from '../app/context/userContext'; 
 import { UserProvider } from "@auth0/nextjs-auth0/client";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

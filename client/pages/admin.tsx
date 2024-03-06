@@ -6,7 +6,9 @@ import React from 'react';
 import Header from '../app/components/Header/Header';
 import Footer from '../app/components/Footer/Footer';
 import "../styles/globals.css";
-import AdminSpace from '../app/components/AdminSpace/AdminSpace';
+import FormAdminSpace from '../app/components/FormAdminSpace/FormAdminSpace';
+import AdminGameList from '../app/components/AdminGameList/AdminGameList';
+
 
 
 const Admin = () => {
@@ -15,7 +17,8 @@ const Admin = () => {
       <UserProvider>
       <Header />
       <br />
-        <AdminSpace/>
+        <FormAdminSpace/>
+        <AdminGameList />
       <Footer />
       </UserProvider>
     </div>
