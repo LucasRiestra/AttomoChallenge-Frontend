@@ -35,9 +35,7 @@ export const getUserByEmail = async (userEmail: string) => {
         });
         
         const dataFetched = await response.json();
-        console.log('Data fetched:', dataFetched); // Aquí se imprimirán los datos obtenidos
-        console.log('User fetched:', dataFetched);
-        return dataFetched; // Devuelve solo los datos, no la respuesta completa
+        return dataFetched;
     } catch (error) {
         console.error('Error fetching user by email:', error);
         return null;

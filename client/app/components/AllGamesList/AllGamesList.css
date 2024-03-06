@@ -23,9 +23,9 @@
     margin-bottom: 10vh;
   }
   
-  .game-card img {
+  .card-image {
     width: 100%;
-    height: auto;
+    height: 55%;
   }
   
   .game-card h2 {

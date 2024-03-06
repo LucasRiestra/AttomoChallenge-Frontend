@@ -3,8 +3,11 @@
 import { useEffect, useState } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
-import { createUser, getUserByEmail } from '../../../services/user.services';
+import { createUser, getUserByEmail } from '../../services/user.services';
 import "./Header.css";
+import { toast } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+
 
 export default function Header() {
   const { user, isLoading } = useUser();
@@ -29,7 +32,13 @@ export default function Header() {
     fetchUser();
   }, [user]);
 
-  console.log('Local user:', localUser);
+  const handleAdminClick = () => {
+    if (!user) {
+      toast.error('You need to login to access the admin space.');
+    } else {
+      window.location.href = '/admin';
+    }
+  };
 
   return (
     <header className='Header'>
@@ -44,9 +53,6 @@ export default function Header() {
               Logout
             </button>
           </Link>
-          
-            <h1>Admin Space</h1>
-          
         </>
       ) : (
         <Link href="/api/auth/login">
@@ -55,7 +61,10 @@ export default function Header() {
           </button>
         </Link>
         
-      )}<h1>Admin Space</h1>
+      )}
+      <button onClick={handleAdminClick}>Admin Space</button>
+      <Toaster />
+      
     </header>
   );
 }
