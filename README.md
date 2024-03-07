@@ -49,6 +49,13 @@ The frontend utilizes the following libraries to enhance user experience and str
 - Bootstrap: Incorporates Bootstrap for creating modals, enhancing the overall user interface.
 - React-hot-toast: Utilizes React-hot-toast for smooth and customizable toasts, providing user 
 
+## Deployment
+The Attomo Challenge Frontend has been successfully deployed and is accessible at the following link:
+
+[Attomo Challenge Frontend Deployment](https://attomo-challenge-frontend.vercel.app/)
+
+Feel free to explore the live deployment of the application and enjoy the seamless voting experience.
+
 ## Contributions
 Contributions are welcome. If you find any issues or have any suggestions, feel free to open an issue or submit a pull request.
 
