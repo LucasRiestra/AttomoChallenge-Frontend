@@ -97,6 +97,7 @@
       margin: 10px auto; 
       height: 100%;
       border-radius: 10px;
+      padding-bottom: 3vh;
     }
 
     .SearchBar {
@@ -108,4 +109,5 @@
       height: 72%;
       border-radius: 5px;
     }
+
   }
