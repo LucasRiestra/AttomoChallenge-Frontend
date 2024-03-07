@@ -47,7 +47,7 @@ export default function Header() {
         <div>Loading...</div>
       ) : user && localUser ? (
         <>
-          <div>Welcome, {localUser?.name}</div>
+          <div className='name'>Welcome, {localUser?.name}</div>
           <Link href="/api/auth/logout">
             <button>
               Logout

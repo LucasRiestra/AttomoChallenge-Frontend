@@ -40,3 +40,14 @@
     cursor: pointer;
     box-shadow: 5px 5px 10px black;
   }
+
+  @media screen and (max-width: 500px) and (max-height: 950px) {
+    .Header button {
+      padding: 3px 6px;
+      font-size: 14px;
+    }
+
+    .name {
+      display: none;
+    }
+  }
